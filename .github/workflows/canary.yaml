@@ -1,6 +1,5 @@
 name: Canary deployment strategy
 
-
 on:
   push:
     branches: [ main ]
