@@ -1,4 +1,4 @@
-name: Canary-strategy
+name: Canary deployment strategy
 
 
 on:
