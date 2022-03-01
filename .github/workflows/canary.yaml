@@ -8,9 +8,6 @@ on:
   workflow_dispatch:
 
 env:
-  # ACR_NAME: demogaurav.azurecr.io
-  # ACR_REPO_NAME: demogaurav.azurecr.io/docker-java-app
-  # ARTIFACT_NAME: docker-java-app
   RESOURCE_GROUP: mslearn-gh-pipelines-5163
   AKS_CLUSTER_NAME: contoso-video
   
@@ -81,7 +78,7 @@ jobs:
 
       - name: Reject App
         uses: azure/k8s-deploy@v1.3
-        if: ${{ failure() }}
+        #if: ${{ failure() }}
         with:
           namespace: default
           manifests: |
