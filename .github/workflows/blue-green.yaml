@@ -1,6 +1,5 @@
 name: Blue-Green deployment strategy
 
-
 on:
   push:
     branches: [ main ]
