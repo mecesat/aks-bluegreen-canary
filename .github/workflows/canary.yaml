@@ -78,7 +78,7 @@ jobs:
 
       - name: Reject App
         uses: azure/k8s-deploy@v1.3
-        #if: ${{ failure() }}
+        if: ${{ failure() }}
         with:
           namespace: default
           manifests: |
